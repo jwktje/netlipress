@@ -13,12 +13,12 @@ The theme uses Laravel Mix to build the front-end assets.
 
 ## Get started
 
-1. Run `composer create-project fiascode/netlipress MyProjectName`
+1. Run `composer create-project netlipress/netlipress MyProjectName`
 2. Run `cd MyProjectName`
-3. Run `composer install`
-4. Run `npm install`
-5. Configure the `/admin/config.yml` according to the Netlify CMS docs
-6. Create a new host in MAMP (or similar) that points to the root of this project
+3. Run `npm install`
+4. Configure the `/admin/config.yml` according to the Netlify CMS docs
+5. Create a new host in MAMP (or similar) that points to the root of this project
+6. Use the Development functions below during development
 
 ## Development functions
 `npm run watch` 
@@ -28,10 +28,6 @@ Build assets for development
 `npm run prod`
 
 Build assets for production
-
-`npm run deploy`
-
-Deploy over FTP (More details below)
 
 ## Casts
 

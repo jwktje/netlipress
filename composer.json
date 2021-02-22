@@ -8,6 +8,7 @@
   ],
   "license": "MIT",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "netlipress/framework": "^0.0.1"
   }
