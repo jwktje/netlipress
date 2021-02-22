@@ -1,13 +1,12 @@
 {
-  "name": "netlipress/netlipress",
+  "name": "netlipress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "npx mix watch",
     "dev": "npx mix",
-    "prod": "npx mix --production",
-    "deploy": "node app/ci/deploy"
+    "prod": "npx mix --production"
   },
   "keywords": [],
   "author": "",
