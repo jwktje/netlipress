@@ -13,10 +13,12 @@ The theme uses Laravel Mix to build the front-end assets.
 
 ## Get started
 
-1. Run `composer install`
-2. Run `npm install`
-3. Configure the `/admin/config.yml` according to the Netlify CMS docs
-4. Create a new host in MAMP (or similar) that points to the root of this project
+1. Run `composer create-project fiascode/netlipress MyProjectName`
+2. Run `cd MyProjectName`
+3. Run `composer install`
+4. Run `npm install`
+5. Configure the `/admin/config.yml` according to the Netlify CMS docs
+6. Create a new host in MAMP (or similar) that points to the root of this project
 
 ## Development functions
 `npm run watch` 
@@ -51,11 +53,3 @@ For example:
   }
 }
 ```
-
-## FTP Deploy
-
-To use the ftp deploy you need to set some parameters in a `.env` file.
-
-- FTP_USERNAME
-- FTP_PASSWORD
-- FTP_HOST
