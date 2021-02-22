@@ -9,6 +9,6 @@
   "license": "MIT",
   "minimum-stability": "dev",
   "require": {
-    "fiascode/netlipress-framework": "^0.0.1"
+    "netlipress/framework": "^0.0.1"
   }
 }
