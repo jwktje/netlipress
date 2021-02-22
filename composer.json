@@ -1,0 +1,14 @@
+{
+    "name": "fiascode/netlipress",
+    "type": "project",
+    "description": "Netlipress Framework.",
+    "keywords": [
+        "netlify",
+        "wordpress"
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "fiascode/netlipress-framework": "^1.*"
+    }
+}

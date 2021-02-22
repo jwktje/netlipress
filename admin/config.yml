@@ -1,0 +1,7 @@
+backend:
+# Define auth here
+
+media_folder: "content/uploads"
+
+collections:
+# Define collections here
