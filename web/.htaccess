@@ -7,6 +7,15 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 
+#Resize images
+RewriteCond %{REQUEST_URI} ^/uploads/
+RewriteCond %{QUERY_STRING} size=
+RewriteRule . /index.php [L]
+
+#Dynamic sitemap
+RewriteCond %{REQUEST_URI} ^/sitemap.xml
+RewriteRule . /index.php [L]
+
 #Caching
 <IfModule mod_expires.c>
   ExpiresActive On

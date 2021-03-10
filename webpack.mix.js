@@ -1,12 +1,15 @@
+let path = require('path');
 let mix = require('laravel-mix');
 
 mix.browserSync({
-    proxy: 'https://local-host-name.test',
+    proxy: 'https://yourdomain.test',
 });
 
 mix.options({
     processCssUrls: false
 });
 
-mix.js('web/theme/js/actions.js', '').setPublicPath('web/theme/dist');
-mix.sass('web/theme/sass/style.scss', '');
+mix.setPublicPath('web/theme/dist');
+
+mix.js('web/theme/js/actions.js', '').version();
+mix.sass('web/theme/sass/style.scss', '').version();
