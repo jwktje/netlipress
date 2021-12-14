@@ -2,7 +2,7 @@
     <div class="main-wrapper">
 
         <a class="logo" href="/">
-            <img width="200" src="<?php echo get_template_directory_uri(); ?>/img/the-fit-game-logo.svg" alt="the-fit-game-logo" loading="lazy"/>
+            <img width="200" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo" loading="lazy"/>
         </a>
 
         <div class="menu-wrapper">
