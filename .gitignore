@@ -2,4 +2,5 @@
 .env
 node_modules
 vendor
+build
 web/theme/dist

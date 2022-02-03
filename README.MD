@@ -16,9 +16,10 @@ The theme uses Laravel Mix to build the front-end assets.
 1. Run `composer create-project netlipress/netlipress MyProjectName`
 2. Run `cd MyProjectName`
 3. Run `npm install`
-4. Configure the `/admin/config.yml` according to the Netlify CMS docs
+4. Configure the `/config/cms/config.json` according to the Netlify CMS docs
 5. Create a new host in MAMP (or similar) that points to the root of this project
-6. Use the Development functions below during development
+6. Configure the browserSync proxy option in webpack.mix.js
+7. Use the Development functions below during development
 
 ## Development functions
 `npm run watch` 
@@ -29,23 +30,11 @@ Build assets for development
 
 Build assets for production
 
-## Casts
+`php netlipress-build`
 
-The file `/admin/casts.json` allows to you define which fields need additional parsing. Only Markdown is currently supported.
-You can define the path to a CMS field and it's type to trigger casting. 
+Build static site for Netlify
 
-The fields are matched on the collection name or (if they occur in dynamic list sections) fall under the group 'sections'.
+## To Do
 
-For example:
-```
-{
-  "sections" : {
-    "section-name-here" : {
-      "paragraph" : "markdown"
-    }
-  },
-  "pages" : {
-    "body" : "markdown"
-  }
-}
-```
+- [ ] Document the shared field groups
+- [ ] Document the separate JSON files in config

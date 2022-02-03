@@ -1,0 +1,53 @@
+{
+    "page_content": {
+        "collections": ["page", "post"],
+        "fields": [
+            {
+                "label": "Title",
+                "name": "title",
+                "widget": "string"
+            }, {
+                "label": "Sections",
+                "name": "sections",
+                "widget": "list",
+                "types": [
+                    {
+                        "label": "Example section",
+                        "name": "example-section",
+                        "widget": "object",
+                        "summary": "Text section - {{fields.title}}",
+                        "fields": [
+                            {
+                                "label": "Title",
+                                "name": "title",
+                                "widget": "string"
+                            }, {
+                                "label": "Content",
+                                "name": "content",
+                                "widget": "markdown"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "label": "Social Title",
+                "name": "social_title",
+                "widget": "string",
+                "required": false,
+                "hint": "Recommended length: 60 characters"
+            }, {
+                "label": "Social Description",
+                "name": "social_desc",
+                "widget": "text",
+                "required": false,
+                "hint": "Recommended length: 155 - 160 characters"
+            }, {
+                "label": "Social Image",
+                "name": "social_image",
+                "widget": "image",
+                "required": false,
+                "hint": "Recommended dimension: 1200 x 630"
+            }
+        ]
+    }
+}

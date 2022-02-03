@@ -1,0 +1,37 @@
+{
+    "name": "menu",
+    "label": "Menus",
+    "label_singular": "Menu",
+    "folder": "content/menu",
+    "format": "json",
+    "editor": {
+        "preview": false
+    },
+    "fields": [
+        {
+            "label": "Title",
+            "name": "title",
+            "widget": "string"
+        }, {
+            "label": "Menu items",
+            "name": "menu-items",
+            "widget": "list",
+            "fields": [
+                {
+                    "label": "Title",
+                    "name": "title",
+                    "widget": "string"
+                }, {
+                    "label": "URL",
+                    "name": "url",
+                    "widget": "string"
+                }, {
+                    "label": "Class",
+                    "name": "class",
+                    "widget": "string",
+                    "required": false
+                }
+            ]
+        }
+    ]
+}

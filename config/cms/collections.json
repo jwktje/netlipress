@@ -1,0 +1,37 @@
+[
+    {
+        "name": "page",
+        "label": "Pages",
+        "label_singular": "Page",
+        "preview_path": "{{slug}}",
+        "folder": "content/page",
+        "create": true,
+        "nested": {
+            "depth": 3
+        },
+        "meta": {
+            "path": {
+                "widget": "string",
+                "label": "Path",
+                "index_file": "index"
+            }
+        },
+        "identifier_field": "title",
+        "format": "json",
+        "editor": {
+            "preview": false
+        }
+    }, {
+    "name": "post",
+    "label": "Posts",
+    "label_singular": "Post",
+    "preview_path": "{{slug}}",
+    "folder": "content/post",
+    "create": true,
+    "identifier_field": "title",
+    "format": "json",
+    "editor": {
+        "preview": false
+    }
+}
+]

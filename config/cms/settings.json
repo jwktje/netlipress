@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Socials",
+        "name": "socials",
+        "file": "content/settings/socials.json",
+        "fields": [
+            {
+                "label": "Instagram",
+                "name": "instagram",
+                "widget": "string"
+            }, {
+                "label": "Facebook",
+                "name": "facebook",
+                "widget": "string"
+            }, {
+                "label": "Twitter",
+                "name": "twitter",
+                "widget": "string"
+            }
+        ]
+    }
+]

@@ -1,0 +1,5 @@
+[build]
+
+command = "npm run prod && php netlipress-build"
+publish = "build"
+environment = { PHP_VERSION = "8.0" }

@@ -1,4 +1,4 @@
-<script src="/web/theme/dist/actions.js"></script>
+<?php wp_footer();?>
 
 </body>
 </html>

@@ -5,7 +5,6 @@
 
         <article>
             <?php the_title(); ?>
-            <?php the_content();?>
             <a class="button" href="<?php the_permalink();?>">
                 Read more
             </a>
