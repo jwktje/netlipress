@@ -17,7 +17,7 @@ The theme uses Laravel Mix to build the front-end assets.
 2. Run `cd MyProjectName`
 3. Run `npm install`
 4. Configure the `/config/cms/config.json` according to the Netlify CMS docs
-5. Create a new host in MAMP (or similar) that points to the root of this project
+5. Create a new host in MAMP (or similar) that points to the web directory of this project
 6. Configure the browserSync proxy option in webpack.mix.js
 7. Use the Development functions below during development
 
@@ -36,5 +36,6 @@ Build static site for Netlify
 
 ## To Do
 
+- [ ] Document Netlify Deployment steps
 - [ ] Document the shared field groups
 - [ ] Document the separate JSON files in config
