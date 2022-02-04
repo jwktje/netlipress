@@ -3,23 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/jwktje/netlipress",
   "scripts": {
     "watch": "npx mix watch",
     "dev": "npx mix",
     "prod": "npx mix --production"
   },
+  "pre-commit": [
+    "prod"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "dotenv": "^8.2.0",
-    "ftp-deploy": "^2.4.1",
-    "laravel-mix": "^6.0.11",
-    "postcss": "^8.2.6",
-    "resolve-url-loader": "^3.1.2",
-    "sass": "^1.32.8",
-    "sass-loader": "^8.0.2"
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.41",
+    "pre-commit": "^1.2.2",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.4.0"
   }
 }
