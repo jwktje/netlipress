@@ -1,27 +1,51 @@
 # NetliPress
 
-A framework to write a website managed by Netlify CMS and themed like a Wordpress Theme.
-Code can be easily migrated to a full fledged Wordpress Theme.
+A framework to write a website managed by Netlify CMS and themed like a Wordpress Theme. Code can be easily migrated to
+a full fledged Wordpress Theme.
 
 ## How does it work?
 
-This framework uses Collections from Netlify CMS that are formatted as JSON.
-The router checks if an entry in a collection exists, if so, it loads the data and renders the page.
+This framework uses Collections from Netlify CMS that are formatted as JSON. The router checks if an entry in a
+collection exists, if so, it loads the data and renders the page.
 
-This data is made available via template tags that mimic a Wordpress and ACF workflow. These tags are described further down.
-The theme uses Laravel Mix to build the front-end assets.
+This data is made available via template tags that mimic a Wordpress and ACF workflow. These tags are described further
+down. The theme uses Laravel Mix to build the front-end assets.
 
 ## Get started
 
 1. Run `composer create-project netlipress/netlipress MyProjectName`
 2. Run `cd MyProjectName`
 3. Run `npm install && npm run prod`
-5. Configure the `/config/cms/config.json` according to the Netlify CMS docs
-6. Create a new host in MAMP (or similar) that points to the web directory of this project
-7. Configure the browserSync proxy option in webpack.mix.js
-8. Use the Development functions below during development
+4. Initialize a new Git repository in the root of your project.
+5. Create a new local domain in MAMP (or similar) that points to the `/web` directory of this project
+6. Configure the CMS by filling the `/config/cms/*.json` files. Set the `site_url` option in `/config/cms/config.json`
+   to the domain you choose in the previous step. Check the section below for more info on the config files and check
+   the NetlifyCMS docs for the available options.
+7. Visit your local domain and verify that you can see the NetliPress splash screen.
+8. Run the NetlifyCMS proxy server with `npx netlify-cms-proxy-server`
+9. Access the CMS locally at `/admin`. If the host is configured correctly and the proxy server is running, you should
+   be able to access the CMS.
+10. Create a new page in the CMS with the path `/` and a title. This will be your homepage. Verify that you can publish
+    it and that you can click `View Live` to visit the page. You should see the title you entered. Don't worry if the
+    layout looks broken. This is because NetliPress doesn't ship with a styled theme. If the URL is wrong, check if you configured your `site_url` correctly in step 6.
+11. (optionally) Configure the browserSync proxy option in `webpack.mix.js`
+12. Use `npm run watch` during development to compile assets and update via BrowserSync
+
+## Config files
+
+`config.json` is the base config. All other files get merged with this file to make the final config for NetlifyCMS
+
+`collections.json` holds all your content collections. Pages and posts are filled by default.
+
+`fields.json` allows you to specify field groups that get shared across collections. An example is provided by default
+
+`menu.json` holds a single collection for menu records. Check `/content/menu/primary.json` for an example.
+
+`settings.json` holds a single collection for groups of site settings. Check `/content/settings/socials.json` for an
+example.
 
 ## Development functions
+
 `npm run watch` - Build assets for development
 
 `npm run prod` - Build assets for production

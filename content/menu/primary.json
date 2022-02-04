@@ -1,4 +1,15 @@
 {
-  "title": "Primary menu",
-  "menu-items": []
+    "title": "Primary menu",
+    "menu-items": [
+        {
+            "title": "Home",
+            "url": "/",
+            "class": ""
+        },
+        {
+            "title": "Blog",
+            "url": "/blog",
+            "class": ""
+        }
+    ]
 }
