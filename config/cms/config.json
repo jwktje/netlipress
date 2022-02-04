@@ -8,6 +8,6 @@
             "name" : "git-gateway"
         },
         "site_url": "https://yourdomain.test",
-        "media_folder": "web/uploads"
+        "media_folder": "public/uploads"
     }
 }

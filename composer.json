@@ -10,6 +10,6 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "netlipress/framework": "^0.4"
+    "netlipress/framework": "^0.5"
   }
 }

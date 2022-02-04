@@ -8,7 +8,7 @@ mix.options({
     processCssUrls: false
 });
 
-mix.setPublicPath('web/theme/dist');
+mix.setPublicPath('public/theme/dist');
 
-mix.js('web/theme/js/actions.js', '').version();
-mix.sass('web/theme/sass/style.scss', '').version();
+mix.js('public/theme/js/actions.js', '').version();
+mix.sass('public/theme/sass/style.scss', '').version();

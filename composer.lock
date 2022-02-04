@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "989e29b8c979461da6574ffe747f6ea3",
+    "content-hash": "a6547a89d2ba818a8bf30bce29a9c307",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -319,16 +319,16 @@
         },
         {
             "name": "netlipress/framework",
-            "version": "0.4.3",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jwktje/netlipress-framework.git",
-                "reference": "8990d4009d471b1c27d98b69b7509cbf60adfcb5"
+                "reference": "85969edce5cc09ab6a36fe5342a1e698738a6f9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jwktje/netlipress-framework/zipball/8990d4009d471b1c27d98b69b7509cbf60adfcb5",
-                "reference": "8990d4009d471b1c27d98b69b7509cbf60adfcb5",
+                "url": "https://api.github.com/repos/jwktje/netlipress-framework/zipball/85969edce5cc09ab6a36fe5342a1e698738a6f9c",
+                "reference": "85969edce5cc09ab6a36fe5342a1e698738a6f9c",
                 "shasum": ""
             },
             "require": {
@@ -362,9 +362,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jwktje/netlipress-framework/issues",
-                "source": "https://github.com/jwktje/netlipress-framework/tree/0.4.3"
+                "source": "https://github.com/jwktje/netlipress-framework/tree/0.5.0"
             },
-            "time": "2022-02-04T20:49:17+00:00"
+            "time": "2022-02-04T22:13:28+00:00"
         },
         {
             "name": "psr/http-factory",

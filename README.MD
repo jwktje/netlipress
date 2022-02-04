@@ -16,7 +16,7 @@ down. The theme uses Laravel Mix to build the front-end assets.
 1. Run `composer create-project netlipress/netlipress MyProjectName`
 2. Run `cd MyProjectName`
 3. Run `npm install && npm run prod`
-5. Create a new local domain in MAMP (or similar) that points to the `/web` directory of this project
+5. Create a new local domain in MAMP (or similar) that points to the `/public` directory of this project
 6. Configure the CMS by filling the `/config/cms/*.json` files. Set the `site_url` option in `/config/cms/config.json`
    to the domain you choose in the previous step. Check the section below for more info on the config files and check
    the NetlifyCMS docs for the available options.
