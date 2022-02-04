@@ -25,7 +25,7 @@ down. The theme uses Laravel Mix to build the front-end assets.
 9. Access the CMS locally at `/admin`. If the host is configured correctly and the proxy server is running, you should
    be able to access the CMS.
 10. Create a new page in the CMS with the path `/` and a title. This will be your homepage. Verify that you can publish
-    it and that you can click `View Live` to visit the page. You should see the title you entered. Don't worry if the
+    it. Then refresh the CMS page, and you should be able to click `View Live` to visit the page. You should see the title you entered. Don't worry if the
     layout looks broken. This is because NetliPress doesn't ship with a styled theme. If the URL is wrong, check if you
     configured your `site_url` correctly in step 6.
 11. (optionally) Configure the browserSync proxy option in `webpack.mix.js`
