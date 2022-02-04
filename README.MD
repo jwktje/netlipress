@@ -16,7 +16,6 @@ down. The theme uses Laravel Mix to build the front-end assets.
 1. Run `composer create-project netlipress/netlipress MyProjectName`
 2. Run `cd MyProjectName`
 3. Run `npm install && npm run prod`
-4. Initialize a new Git repository in the root of your project.
 5. Create a new local domain in MAMP (or similar) that points to the `/web` directory of this project
 6. Configure the CMS by filling the `/config/cms/*.json` files. Set the `site_url` option in `/config/cms/config.json`
    to the domain you choose in the previous step. Check the section below for more info on the config files and check
@@ -27,9 +26,24 @@ down. The theme uses Laravel Mix to build the front-end assets.
    be able to access the CMS.
 10. Create a new page in the CMS with the path `/` and a title. This will be your homepage. Verify that you can publish
     it and that you can click `View Live` to visit the page. You should see the title you entered. Don't worry if the
-    layout looks broken. This is because NetliPress doesn't ship with a styled theme. If the URL is wrong, check if you configured your `site_url` correctly in step 6.
+    layout looks broken. This is because NetliPress doesn't ship with a styled theme. If the URL is wrong, check if you
+    configured your `site_url` correctly in step 6.
 11. (optionally) Configure the browserSync proxy option in `webpack.mix.js`
 12. Use `npm run watch` during development to compile assets and update via BrowserSync
+
+## Deploy to Netlify
+
+This is to be documented better. But in short the steps are.
+
+1. Initialize a Git repository for this project and push it to Gitlab or Github.
+2. Set up a new site on Netlify and connect it with that same repository.
+3. Netlify should run `php netlipress-build` any time NetlifyCMS commits new changes to the content. Note; the
+   netlify.toml file should be picked up so the build commands should be automatically discovered.
+4. The `pre-commit` script should automatically compile your assets any time you commit something yourself.
+
+This means that any time you make a code change and push it, the commit hook makes sure you push the latest compiled
+production assets. And Netlify triggers a build of only the static site assets. This means you commit compiled assets
+but that is on purpose. This saves on build minutes because npm doesn't run on Netlify this way.
 
 ## Config files
 
