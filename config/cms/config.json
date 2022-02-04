@@ -1,7 +1,11 @@
 {
     "config": {
-        "backend": {
-            "name": "git-gateway"
+        "backend_local": {
+            "name": "proxy",
+            "proxy_url": "http://localhost:8081/api/v1"
+        },
+        "backend_production": {
+            "name" : "git-gateway"
         },
         "site_url": "https://yourdomain.test",
         "media_folder": "web/uploads"
