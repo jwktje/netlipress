@@ -5,7 +5,15 @@
             "proxy_url": "http://localhost:8081/api/v1"
         },
         "backend_production": {
-            "name" : "git-gateway"
+            "name" : "git-gateway",
+            "commit_messages": {
+                "create": "[skip-mix] Create {{collection}} '{{slug}}'",
+                "update": "[skip-mix] Update {{collection}} '{{slug}}'",
+                "delete": "[skip-mix] Delete {{collection}} '{{slug}}'",
+                "uploadMedia": "[skip-mix] Upload '{{path}}'",
+                "deleteMedia": "[skip-mix] Delete '{{path}}'",
+                "openAuthoring": "[skip-mix] {{message}}"
+            }
         },
         "site_url": "https://yourdomain.test",
         "media_folder": "public/uploads"

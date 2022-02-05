@@ -9,9 +9,6 @@
     "dev": "npx mix",
     "prod": "npx mix --production"
   },
-  "pre-commit": [
-    "prod"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,7 +16,6 @@
     "browser-sync": "^2.27.7",
     "browser-sync-webpack-plugin": "^2.3.0",
     "laravel-mix": "^6.0.41",
-    "pre-commit": "^1.2.2",
     "sass": "^1.49.7",
     "sass-loader": "^12.4.0"
   }
