@@ -39,7 +39,7 @@ This is to be documented better. But in short the steps are.
 2. Set up a new site on Netlify and connect it with that same repository.
 3. Netlify should run `php netlipress-build` any time NetlifyCMS commits new changes to the content. Note; the
    netlify.toml file should be picked up so the build commands should be automatically discovered.
-4. The `pre-commit` script should automatically compile your assets any time you commit something yourself.
+4. The build step should automatically compile your assets any time you commit something yourself. NetlifyCMS commits only trigger static site generation but they skip asset compilation by including [skip-mix] in their commits
 
 This means that any time you make a code change and push it, the commit hook makes sure you push the latest compiled
 production assets. And Netlify triggers a build of only the static site assets. This means you commit compiled assets
