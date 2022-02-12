@@ -319,16 +319,16 @@
         },
         {
             "name": "netlipress/framework",
-            "version": "0.5.5",
+            "version": "0.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jwktje/netlipress-framework.git",
-                "reference": "7f52bb0c9d7f40442df0f9b11c7ccde97192274c"
+                "reference": "94da46a2012039baa1abdf43adcfdf36e7e50572"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jwktje/netlipress-framework/zipball/7f52bb0c9d7f40442df0f9b11c7ccde97192274c",
-                "reference": "7f52bb0c9d7f40442df0f9b11c7ccde97192274c",
+                "url": "https://api.github.com/repos/jwktje/netlipress-framework/zipball/94da46a2012039baa1abdf43adcfdf36e7e50572",
+                "reference": "94da46a2012039baa1abdf43adcfdf36e7e50572",
                 "shasum": ""
             },
             "require": {
@@ -362,9 +362,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jwktje/netlipress-framework/issues",
-                "source": "https://github.com/jwktje/netlipress-framework/tree/0.5.5"
+                "source": "https://github.com/jwktje/netlipress-framework/tree/0.5.6"
             },
-            "time": "2022-02-05T15:20:32+00:00"
+            "time": "2022-02-12T16:16:17+00:00"
         },
         {
             "name": "psr/http-factory",

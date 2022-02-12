@@ -21,13 +21,13 @@ down. The theme uses Laravel Mix to build the front-end assets.
    to the domain you choose in the previous step. Check the section below for more info on the config files and check
    the NetlifyCMS docs for the available options.
 7. Visit your local domain and verify that you can see the NetliPress splash screen.
-8. Run the NetlifyCMS proxy server with `npx netlify-cms-proxy-server`
+8. Run the NetlifyCMS proxy server with `npm run proxy`
 9. Access the CMS locally at `/admin`. If the host is configured correctly and the proxy server is running, you should
    be able to access the CMS.
 10. Create a new page in the CMS with the path `/` and a title. This will be your homepage. Verify that you can publish
-    it. Then refresh the CMS page, and you should be able to click `View Live` to visit the page. You should see the title you entered. Don't worry if the
-    layout looks broken. This is because NetliPress doesn't ship with a styled theme. If the URL is wrong, check if you
-    configured your `site_url` correctly in step 6.
+    it. Then refresh the CMS page, and you should be able to click `View Live` to visit the page. You should see the
+    title you entered. Don't worry if the layout looks broken. This is because NetliPress doesn't ship with a styled
+    theme. If the URL is wrong, check if you configured your `site_url` correctly in step 6.
 11. (optionally) Configure the browserSync proxy option in `webpack.mix.js`
 12. Use `npm run watch` during development to compile assets and update via BrowserSync
 
@@ -39,7 +39,9 @@ This is to be documented better. But in short the steps are.
 2. Set up a new site on Netlify and connect it with that same repository.
 3. Netlify should run `php netlipress-build` any time NetlifyCMS commits new changes to the content. Note; the
    netlify.toml file should be picked up so the build commands should be automatically discovered.
-4. The build step should automatically compile your assets any time you commit something yourself. NetlifyCMS commits only trigger static site generation but they skip asset compilation by including [skip-mix] in their commits
+4. The Netlify build should automatically compile your assets with Laravel Mix any time you commit something containing
+   js or scss files. NetlifyCMS commits will trigger static site generation but they skip asset compilation because
+   their commits only include json or images. Resulting in quicker builds and less build minutes.
 
 This means that any time you make a code change and push it, the commit hook makes sure you push the latest compiled
 production assets. And Netlify triggers a build of only the static site assets. This means you commit compiled assets
@@ -66,7 +68,7 @@ example.
 
 `php netlipress-build` - Build static site for Netlify
 
-`npx netlify-cms-proxy-server` - Start a proxy to use NetlifyCMS on local the repository
+`npm rum proxy` - Start a proxy to use NetlifyCMS on local the repository
 
 ## To Do
 
