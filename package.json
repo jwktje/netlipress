@@ -17,6 +17,7 @@
     "browser-sync": "^2.27.7",
     "browser-sync-webpack-plugin": "^2.3.0",
     "laravel-mix": "^6.0.41",
+    "normalize.css": "^8.0.1",
     "sass": "^1.49.7",
     "sass-loader": "^12.4.0"
   }
