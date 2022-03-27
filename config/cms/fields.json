@@ -8,27 +8,8 @@
                 "widget": "string"
             }, {
                 "label": "Sections",
-                "name": "sections",
-                "widget": "list",
-                "types": [
-                    {
-                        "label": "Example section",
-                        "name": "example-section",
-                        "widget": "object",
-                        "summary": "Text section - {{fields.title}}",
-                        "fields": [
-                            {
-                                "label": "Title",
-                                "name": "title",
-                                "widget": "string"
-                            }, {
-                                "label": "Content",
-                                "name": "content",
-                                "widget": "markdown"
-                            }
-                        ]
-                    }
-                ]
+                "name": "blocks",
+                "widget": "list"
             }, {
                 "label": "Social Title",
                 "name": "social_title",

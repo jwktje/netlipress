@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6547a89d2ba818a8bf30bce29a9c307",
+    "content-hash": "5281531313eb5830123484a73bcf332d",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -173,16 +173,16 @@
         },
         {
             "name": "icamys/php-sitemap-generator",
-            "version": "4.3.3",
+            "version": "4.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/icamys/php-sitemap-generator.git",
-                "reference": "5d54b5679b811cf3345c5bbb0cc45d84a797dfe6"
+                "reference": "89b706fc009ffb81b52fc6f7536aa116b0786fc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/icamys/php-sitemap-generator/zipball/5d54b5679b811cf3345c5bbb0cc45d84a797dfe6",
-                "reference": "5d54b5679b811cf3345c5bbb0cc45d84a797dfe6",
+                "url": "https://api.github.com/repos/icamys/php-sitemap-generator/zipball/89b706fc009ffb81b52fc6f7536aa116b0786fc5",
+                "reference": "89b706fc009ffb81b52fc6f7536aa116b0786fc5",
                 "shasum": ""
             },
             "require": {
@@ -212,9 +212,9 @@
             ],
             "authors": [
                 {
-                    "name": "Prisacari Dmitrii",
+                    "name": "Dmitrii Prisacari",
                     "email": "prisacari.dmitrii@gmail.com",
-                    "homepage": "http://github.com/icamys/"
+                    "homepage": "https://github.com/icamys/"
                 }
             ],
             "description": "Simple PHP sitemap generator.",
@@ -229,9 +229,9 @@
             ],
             "support": {
                 "issues": "https://github.com/icamys/php-sitemap-generator/issues",
-                "source": "https://github.com/icamys/php-sitemap-generator/tree/4.3.3"
+                "source": "https://github.com/icamys/php-sitemap-generator/tree/4.3.8"
             },
-            "time": "2021-08-01T15:07:57+00:00"
+            "time": "2022-03-27T12:26:37+00:00"
         },
         {
             "name": "intervention/image",
@@ -319,16 +319,16 @@
         },
         {
             "name": "netlipress/framework",
-            "version": "0.5.16",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jwktje/netlipress-framework.git",
-                "reference": "44bae753ba54958bb0c95a5feefe3d958fab57c7"
+                "reference": "2508bd13a352c153d9f1d5aac33aab344f880d2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jwktje/netlipress-framework/zipball/44bae753ba54958bb0c95a5feefe3d958fab57c7",
-                "reference": "44bae753ba54958bb0c95a5feefe3d958fab57c7",
+                "url": "https://api.github.com/repos/jwktje/netlipress-framework/zipball/2508bd13a352c153d9f1d5aac33aab344f880d2f",
+                "reference": "2508bd13a352c153d9f1d5aac33aab344f880d2f",
                 "shasum": ""
             },
             "require": {
@@ -362,9 +362,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jwktje/netlipress-framework/issues",
-                "source": "https://github.com/jwktje/netlipress-framework/tree/0.5.16"
+                "source": "https://github.com/jwktje/netlipress-framework/tree/0.6.1"
             },
-            "time": "2022-03-25T17:31:14+00:00"
+            "time": "2022-03-27T12:42:00+00:00"
         },
         {
             "name": "psr/http-factory",
